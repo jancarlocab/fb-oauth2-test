@@ -5,3 +5,6 @@
 5. Backend exchanges the code for an access token.
 6. Backend fetches user information using the access token.
 7. Frontend receives user data from the backend.
+
+**Resources Used**
+- https://developers.facebook.com/docs/facebook-login/guides/advanced/manual-flow
