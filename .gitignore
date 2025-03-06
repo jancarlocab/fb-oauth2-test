@@ -1,0 +1,4 @@
+__pycache__/
+server/.env
+frontend/test-fb-auth/node_modules/
+frontend/test-fb-auth/.env
