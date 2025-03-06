@@ -6,7 +6,7 @@ import httpx
 
 load_dotenv()
 
-router = APIRouter(prefix="/auth", tags=["auth"])
+router = APIRouter(prefix="/facebook/auth", tags=["auth"])
 
 FACEBOOK_CLIENT_ID = os.getenv("FACEBOOK_CLIENT_ID")
 FACEBOOK_CLIENT_SECRET = os.getenv("FACEBOOK_CLIENT_SECRET")

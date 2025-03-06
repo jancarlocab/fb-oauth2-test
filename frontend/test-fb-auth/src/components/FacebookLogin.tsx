@@ -4,7 +4,7 @@ const FacebookLogin = () => {
   const apiBaseUrl = import.meta.env.VITE_API_BASE_URL;
 
   const handleFacebookLogin = () => {
-    window.location.href = `${apiBaseUrl}/auth/login`;
+    window.location.href = `${apiBaseUrl}/facebook/auth/login`;
   };
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const FacebookLogin = () => {
     // Call /callback
     // get user info in this route!
     if (code) {
-      fetch(`${apiBaseUrl}/auth/callback?code=${code}`)
+      fetch(`${apiBaseUrl}/facebook/auth/callback?code=${code}`)
         .then((res) => res.json())
         .then((data) => {
           console.log("User Info:", data);
